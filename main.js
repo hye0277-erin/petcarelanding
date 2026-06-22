@@ -30,9 +30,9 @@ gsap.utils.toArray(".reveal").forEach((el) => {
 
 /* empathy 말풍선 — 회전은 CSS에 맡기고 opacity/y만 건드림 */
 gsap.fromTo(".q-rev",
-  { y: 24, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.55, stagger: 0.1, ease: "back.out(1.6)",
-    scrollTrigger: { trigger: ".bubbles", start: "top 85%" } }
+  { y: -130, opacity: 0, scale: 0.88 },
+  { y: 0, opacity: 1, scale: 1, duration: 0.78, stagger: 0.12, ease: "bounce.out",
+    scrollTrigger: { trigger: ".bubbles", start: "top 82%" } }
 );
 
 /* feature phones slide in */
